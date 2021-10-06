@@ -19,8 +19,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "build-artifacts": "npx hardhat compile",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build-artifacts && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
